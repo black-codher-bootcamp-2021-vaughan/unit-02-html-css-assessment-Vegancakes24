@@ -18,6 +18,12 @@ h2 {text-align: center;
   margin-right: auto;
 }
 
+.about-me {text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-block: 50px; }
+
+
 div {
   width: 300px;
   margin: auto;
