@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap');
+
+body { font-family: 'Comic Neue', cursive;
+background-image: white; 
+}
+* { box-sizing: border-box }
+
+body{
+  margin:0;
+  padding:0;
+  color: black;
+  font-family:sans-serif;
+  font-size:160%;
+}
+div{
+    padding: 4% 10%;
+}
+.example{
+  background-color: #FFC0CB;
+  background-image: -webkit-linear-gradient(135deg, #FFC0CB 57%, #FFF 35%);
+  min-height: 400px;
+}
+
+h1 {text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    background-color: FFC0CB(243, 199, 237);
+    margin: auto; 
+    padding: 10px} 
+
+h2 {text-align: center;
+   font-weight: italic;
+   align-content: center;
+   justify-content: space-evenly;
+   font-size: 35px;}
+
+.profile-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me {display: flexbox;
+    font-weight: bold;
+    font-size: 25px; 
+    border: 15px; 
+    padding:50px
+    
+  }
+    
+p {
+  border-top: 2px dashed;
+  border-color: black !important;
+  margin:0; padding: 30px;
+  counter-increment: section;
+  position: relative;
+}
+
+
+p:nth-child(even):before {
+  content: counter(section);
+  right: 100%; 
+  margin-right: -20px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  text-align:center;
+  color: white;
+  font-size: 110%;
+}
+
+p:nth-child(odd):before {
+  content: counter(section);
+  left: 100%; 
+  margin-left: -20px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  text-align:center;
+  color: white;
+  font-size: 110%;
+}
+
+p:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px; 
+  padding-right: 0;
+}
+
+p:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px; 
+  padding-left: 0;
+}
+
+p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+
+ul{
+  text-align: center;
+  list-style-type: none;
+}
+
+ol {
+  text-align: center;
+  list-style-type: none;
+}
+
+  .social-icon {
+    color:black;
+    text-decoration: none;
+    size:15cm;
+    text-align: center;
+    list-style-type: none;
+
+  }
